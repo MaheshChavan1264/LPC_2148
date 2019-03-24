@@ -1,0 +1,72 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             Program, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000 E59F1008 
+                       Main    ldr              r1,value1
+    4 00000004 E59F2008        ldr              r2,value2
+    5 00000008 E0030291        mul              r3,r1,r2
+    6 0000000C E58F3004        str              r3,result
+    7 00000010 10101111 
+                       value1  dcd              &10101111
+    8 00000014 22021021 
+                       value2  dcd              &22021021
+    9 00000018 00000008 
+                       result  dcd              0x00000008
+   10 0000001C                 end
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\multi.d -o.\objects\multi.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\ARM\C
+MSIS\Include -IC:\Keil_v5\ARM\INC\Philips --predefine="__EVAL SETA 1" --predefi
+ne="__UVISION_VERSION SETA 527" --list=.\listings\multi.lst multi.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Main 00000000
+
+Symbol: Main
+   Definitions
+      At line 3 in file multi.asm
+   Uses
+      None
+Comment: Main unused
+Program 00000000
+
+Symbol: Program
+   Definitions
+      At line 1 in file multi.asm
+   Uses
+      None
+Comment: Program unused
+result 00000018
+
+Symbol: result
+   Definitions
+      At line 9 in file multi.asm
+   Uses
+      At line 6 in file multi.asm
+Comment: result used once
+value1 00000010
+
+Symbol: value1
+   Definitions
+      At line 7 in file multi.asm
+   Uses
+      At line 3 in file multi.asm
+Comment: value1 used once
+value2 00000014
+
+Symbol: value2
+   Definitions
+      At line 8 in file multi.asm
+   Uses
+      At line 4 in file multi.asm
+Comment: value2 used once
+5 symbols
+337 symbols in table

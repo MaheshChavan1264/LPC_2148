@@ -1,0 +1,1 @@
+"cpl.asm" SET (SMALL) DEBUG PRINT(.\Listings\cpl.lst) OBJECT(.\Objects\cpl.obj) EP

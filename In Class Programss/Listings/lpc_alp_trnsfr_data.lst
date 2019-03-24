@@ -1,0 +1,61 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             Program, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000 E1DF10B0 
+                       Main    LDRH             R1, VALUE
+    4 00000004 E58F1000        STR              R1,RESULT
+    5 00000008         
+    6 00000008 23 C1   VALUE   DCW              &C123
+    7 0000000A 00 00           ALIGN
+    8 0000000C 08 00   RESULT  DCW              0x00000008
+    9 0000000E                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\lpc_alp_trnsfr_data.d -o.\objects\lpc_alp_trnsfr_data.o -IC:\Keil_v5\ARM
+\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_v5\ARM\INC\Philips --predefi
+ne="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 527" --list=.\listings\l
+pc_alp_trnsfr_data.lst ..\lpc_alp_trnsfr_data.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Main 00000000
+
+Symbol: Main
+   Definitions
+      At line 3 in file ..\lpc_alp_trnsfr_data.asm
+   Uses
+      None
+Comment: Main unused
+Program 00000000
+
+Symbol: Program
+   Definitions
+      At line 1 in file ..\lpc_alp_trnsfr_data.asm
+   Uses
+      None
+Comment: Program unused
+RESULT 0000000C
+
+Symbol: RESULT
+   Definitions
+      At line 8 in file ..\lpc_alp_trnsfr_data.asm
+   Uses
+      At line 4 in file ..\lpc_alp_trnsfr_data.asm
+Comment: RESULT used once
+VALUE 00000008
+
+Symbol: VALUE
+   Definitions
+      At line 6 in file ..\lpc_alp_trnsfr_data.asm
+   Uses
+      At line 3 in file ..\lpc_alp_trnsfr_data.asm
+Comment: VALUE used once
+4 symbols
+336 symbols in table

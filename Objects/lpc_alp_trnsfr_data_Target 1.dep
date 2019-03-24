@@ -1,0 +1,2 @@
+Dependencies for Project 'lpc_alp_trnsfr_data', Target 'Target 1': (DO NOT MODIFY !)
+F (.\lpc_alp_trnsfr_data.asm)(0x5C835FEF)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\listings\lpc_alp_trnsfr_data.lst --xref -o .\objects\lpc_alp_trnsfr_data.o --depend .\objects\lpc_alp_trnsfr_data.d)

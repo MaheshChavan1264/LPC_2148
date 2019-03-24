@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  CPL                                                                  03/22/2019 10:50:43 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\cpl.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE cpl.asm SET(SMALL) DEBUG PRINT(.\Listings\cpl.lst) OBJECT(.\Objects\cpl
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 758910            2             mov tmod,#10h
+0003 758B26            3             again:mov tl1,#26h
+0006 758D71            4             mov th1,#71h
+0009 D28E              5             setb tr1
+000B 308FFD            6             back:jnb tf1,back
+000E C28E              7             clr tr1
+0010 B295              8             cpl p1.5
+0012 C28F              9             clr tf1
+0014 80ED             10             sjmp again
+                      11             end
+                                             
+A51 MACRO ASSEMBLER  CPL                                                                  03/22/2019 10:50:43 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0003H   A   
+BACK . . . . . . .  C ADDR   000BH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

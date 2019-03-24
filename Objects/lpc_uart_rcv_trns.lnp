@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\lpc_uart_rcv_trns.o"
+--strict --scatter ".\Objects\lpc_uart_rcv_trns.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lpc_uart_rcv_trns.map" -o .\Objects\lpc_uart_rcv_trns.axf
