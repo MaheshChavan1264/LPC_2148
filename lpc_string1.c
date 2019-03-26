@@ -133,8 +133,8 @@ void clrlcd()
 }
  
 unsigned char ar0[]="***************  ";
-unsigned char ar1[]="ENGINEERSGARAGE";
-unsigned char ar2[]="Inspiring Creations   ";                
+unsigned char ar1[]="MIT Academy of Engineering";
+unsigned char ar2[]="E&TC department"; 
 unsigned char ar3[]="**************  ";
  
 int main()
